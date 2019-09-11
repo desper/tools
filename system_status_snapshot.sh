@@ -10,3 +10,6 @@ df -h | awk '$NF=="/"{printf "Disk Usage: %d/%dGB (%s)\n", $3,$2,$5}' >> $FOLDER
 
 # individual
 top -bn1 -o RES -c > $FOLDER/top.txt
+
+# archive
+tar -cvzf "${FOLDER}.tar.gz" $FOLDER
