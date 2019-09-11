@@ -1,5 +1,5 @@
 #!/bin/sh
-FOLDER=$(hostname)_$(date +"%F_%T")
+FOLDER=$(hostname)_$(date +"%F_%H%M%S")
 mkdir -p $FOLDER
 
 hostname > $FOLDER/overview.txt
